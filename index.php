@@ -142,10 +142,11 @@ function getPerfectPartner($surname, $name, $patronomyc, $arrayExample){
 		};
 };
 
-print_r(getFullnameFromParts("Иванов", "Иван", "Иванович") . "<br>");
-print_r(getPartsFromFullname("Иванов Иван Иванович"));
-print_r(getShortName("Иванов Иван Иванович") . "<br>");
-print_r(getGenderFromName("Иванов Иван Иванович") . "<br>");
-getGenderDescription($example_persons_array);
-getPerfectPartner("ИВАнов", "ИВАН", "ИваНович", $example_persons_array);
+print_r(getFullnameFromParts("Козлов", "Антон", "Иванович") . "<br>");
+print_r(getPartsFromFullname("Козлов Антон Иванович"));
+print_r ("<br>");
+print_r(getShortName("Козлов Антон Иванович") . "<br>");
+print_r(getGenderFromName("Козлов Антон Иванович") . "<br>");
+print_r(getGenderDescription($example_persons_array) . "<br>");
+getPerfectPartner("КОЗлОв", "АнТОН", "ИВАНОВИЧ", $example_persons_array);
 ?>
